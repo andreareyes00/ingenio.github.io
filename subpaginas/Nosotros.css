@@ -1,59 +1,166 @@
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color: #dbbf6b;
-    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+  
+  body {
+    background-color: #6b580f;
+    background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10h10v10H0V10zM10 0h10v10H10V0z' fill='%231d0d36' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
     font-size: 16px;
     font-family: 'Bebas Neue', cursive;
-}
-
-a {
-    color:black;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+  }
+  
+  body.dark {
+    background: black;
+  }
+  
+  a {
+    color: black;
     text-decoration: none;
-}
-
-ul {
+  }
+  
+  ul {
     list-style: none;
-}
-
-.container {
+  }
+  
+  .container {
     width: 90%;
     margin: auto;
-}
-
-/* Navigation*/
-.nav-main {
+  }
+  
+  /* Navigation*/
+  .nav-main {
     font-size: 17px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 60px;
     padding: 20px 0;
-}
-
-.nav-brand {
+  }
+  
+  .nav-brand {
     width: 120px;
-}
-
-/** NAV LEFT*/
-.nav-main ul {
+  }
+  
+  /** NAV LEFT*/
+  .nav-main ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background: gold;
-}
-.nav-main ul li {
+  }
+  
+  .nav-main ul li {
     padding: 10px;
-}
-
-.nav-main ul li a:hover {
+  }
+  
+  .nav-main ul li a:hover {
     border-bottom: 2px solid white;
-
-}
-
-.nav-main ul.nav-menu {
-    flex:1;
+  }
+  
+  .nav-main ul.nav-menu {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     margin-left: 20px;
-}
+  }
+  
+  /*SWITCH*/
+  .switch {
+    background: lightseagreen;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    outline: none;
+  }
+  
+  .switch::after {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: whitesmoke;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    -webkit-box-shadow: 0px 0px 2px 2px black(0, 0, 0, 0.2);
+            box-shadow: 0px 0px 2px 2px black(0, 0, 0, 0.2);
+  }
+  
+  .switch.active {
+    background: orange;
+    color: black;
+  }
+  
+  .switch.active::after {
+    right: 0;
+    left: unset;
+  }
+  
+  .switch span {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    background: none;
+    color: #d7f7d7;
+  }
+  /*# sourceMappingURL=Noticias.css.map */
+  /* SHOWCASE*/
+hr {
+    margin: 13px 0;
+  }
+  
+  .showcase {
+    width: 100%;
+    color: lightyellow;
+    height: 550px;
+    background: url('/maine\ game.gif') no-repeat center center/cover;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .btn{
+    cursor: pointer;
+    display: inline-block;
+    border:0;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: rgb(255, 244, 244);
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    border: 1px solid white;
+    margin: 10px 0;
+  }
+  
+  .btn:hover {
+    opacity: .80;
+  }
+  
+  .showcase h2, 
+  .showcase p {
+    margin-bottom: 10px;
+  }
+  
