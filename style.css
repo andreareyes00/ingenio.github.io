@@ -12,7 +12,7 @@ body {
 }
 
 a {
-    color:rgb(255, 239, 239);
+    color:rgb(0, 0, 0);
     text-decoration: none;
 }
 
@@ -42,7 +42,7 @@ ul {
 /** NAV LEFT*/
 .nav-main ul {
     display: flex;
-    background: rgb(201, 160, 73);
+    background: rgb(255, 219, 142);
 }
 .nav-main ul li {
     padding: 10px;
