@@ -77,7 +77,7 @@ ul {
 
 /*SWITCH*/
 .switch {
-  background: lightseagreen;
+  background: rgb(242, 245, 84);
   border-radius: 1000px;
   border: none;
   position: relative;
@@ -106,8 +106,8 @@ ul {
 }
 
 .switch.active {
-  background: orange;
-  color: black;
+  background: rgb(0, 0, 0);
+  color: rgb(179, 17, 17);
 }
 
 .switch.active::after {
@@ -121,6 +121,6 @@ ul {
   line-height: 30px;
   display: block;
   background: none;
-  color: #d7f7d7;
+  color: #b5b819;
 }
 /*# sourceMappingURL=Game.css.map */
