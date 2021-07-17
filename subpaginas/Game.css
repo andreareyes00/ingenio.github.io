@@ -124,3 +124,30 @@ ul {
   color: #d7f7d7;
 }
 /*# sourceMappingURL=Game.css.map */
+
+/***JUEGUITO*/
+h1 { 
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+div a img {
+  width: 870px;
+  height: 600px;
+  /*cursor: crosshair;*/
+  margin-top: 0;
+}
+
+#buscar {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  margin: 0;
+}
+
+h4 a {
+  color: #fff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  float: left;
+}
+

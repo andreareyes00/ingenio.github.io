@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MaineGame</title>
+    <title>BlueRainBow</title>
     <!--FONT AWESOME--> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!--FONT Bebas Neue-->
@@ -14,14 +14,15 @@
     <!--CUSTOM CSS-->
     <link rel="stylesheet" href="Contacto.css">
     <link rel="stylesheet" href="Contacto.scss">
+    <script src="../javascript/jquery-3.6.0.js"></script>
+    <script src="contacto.js"></script>
     <script src="main.js"></script>
     
 </head>
 <body>
-    
      <div class="container">
         <nav class="nav-main">
-            <img src="../maine game (1).gif" alt="MaineGame LOGO" class="nav-brand">
+            <img src="../ブルーレインボウ.gif" alt="MaineGame LOGO" class="nav-brand">
                 <ul class="nav-menu">
                     <li>
                         <a href="../index.html">Inicio</a>
@@ -56,5 +57,41 @@
         </nav>
         <script src="/subpaginas/main.js"></script>
         <hr>
+        <!-- Aqui empienza Formulario-->
+        <section class="form_wrap">
+            
+            <section class="cantact_info">
+                <section class="info_title">
+                    <span class="fa fa-user-circle"></span>
+                    <h2>INFORMACION<br>DE CONTACTO</h2>
+                </section>
+                <section class="info_items">
+                    <p><span class="fa fa-envelope"></span> BlueRainBow.contact@gmail.com</p>
+                    <p><span class="fa fa-mobile"></span> +1(585) 903-4567</p>
+
+                </section>
+            </section>
+
+            <form action="" class="form_contact">
+                <h2>Envia un Mensaje</h2>
+                <div class="user_info">
+                    <label for="names">Nombres *</label>
+                    <input type="text" id="names"> 
+
+                    <label for="phone">Telefono / Celular</label>
+                    <input type="text" id="phone">
+                    
+                    <label for="email">Correo Electronico *</label>
+                    <input type="text" id="email">
+
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea id="mensaje"></textarea>
+
+                    <input type="button" value="Enviar Mensaje" id="btnSend">
+                </div>
+            </form>
+
+        </section>
+        <!--Aqui termina Formulario-->
         </body>
     </html>
